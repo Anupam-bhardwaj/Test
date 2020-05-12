@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.container, TranslateFragment.newInstance())
+                    .replace(R.id.container, TextIdentify.newInstance())
                     .commitNow();
         }
 
@@ -44,12 +44,18 @@ public class MainActivity extends AppCompatActivity {
                         case R.id.navigation_home:
                             openFragment(TranslateFragment.newInstance());
                             return true;
-                        case R.id.navigation_sms:
+                        case R.id.navigation_label:
                             openFragment(StillImage.newInstance());
                             return true;
                     }
                     return false;
                 }
             };
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        openFragment(TranslateFragment.newInstance());
+    }
 }
 

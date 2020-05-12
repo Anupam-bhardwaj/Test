@@ -4,10 +4,17 @@
     <item
         android:id="@+id/navigation_home"
         android:icon="@drawable/ic_g_translate_black_24dp"
-        android:title="Home" />
+        android:title="Translate"
+        />
     <item
-        android:id="@+id/navigation_sms"
+        android:id="@+id/navigation_label"
         android:icon="@drawable/ic_camera_black_24dp"
-        android:title="Image Labeler" />
+        android:title="Identify Image"
+        />
+
+<!--    <item-->
+<!--        android:id="@+id/text_identifier"-->
+<!--        android:icon="@drawable/ic_assignment_black_24dp"-->
+<!--        android:title="Identify Text"/>-->
 
 </menu>

@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".TranslateFragment">
 
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -16,6 +17,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:inputType="textMultiLine"
+        android:backgroundTint="@color/primaryLight"
         app:layout_constraintBottom_toTopOf="@+id/sourceLangSelector"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -26,6 +28,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="top"
+            android:backgroundTint="@color/primaryLight"
             android:hint="Source text" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -52,6 +55,7 @@
         android:layout_marginEnd="8dp"
         android:text=""
         app:icon="@drawable/ic_compare_arrow_black_24dp"
+        app:iconTint="@color/primaryDark"
         app:layout_constraintEnd_toStartOf="@+id/targetLangSelector"
         app:layout_constraintStart_toEndOf="@+id/sourceLangSelector"
         app:layout_constraintTop_toTopOf="@id/sourceLangSelector" />
@@ -80,7 +84,9 @@
         android:layout_marginBottom="8dp"
         android:textOff="@string/download_model"
         android:textOn="@string/delete_model"
-        android:textSize="11sp"
+        android:background="@color/primaryDark"
+        android:textColor="@color/white"
+        android:textSize="12sp"
         app:layout_constraintBottom_toTopOf="@id/downloadedModels"
         app:layout_constraintEnd_toEndOf="@+id/sourceLangSelector"
         app:layout_constraintStart_toStartOf="@id/sourceLangSelector"
@@ -96,7 +102,9 @@
         android:layout_marginBottom="8dp"
         android:textOff="@string/download_model"
         android:textOn="@string/delete_model"
-        android:textSize="11sp"
+        android:background="@color/primaryDark"
+        android:textColor="@color/white"
+        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="@id/buttonSyncSource"
         app:layout_constraintEnd_toEndOf="@id/targetLangSelector"
         app:layout_constraintStart_toStartOf="@id/targetLangSelector"
@@ -111,6 +119,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:text="@string/downloaded_models_label"
+        android:textColor="@color/primaryLight"
         app:layout_constraintBottom_toTopOf="@id/targetText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

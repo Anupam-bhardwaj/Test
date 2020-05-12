@@ -3,4 +3,18 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
+
+
+    <color name="primary">#F2385F</color>
+    <color name="primaryDark">#E2284C</color>
+    <color name="primaryLight">#80E2284C</color>
+    <color name="accent">#233A48</color>
+    <color name="accentLight">#2D5051</color>
+    <color name="hintAccent">#707070</color>
+    <color name="hintAccentLight">#80707070</color>
+    <color name="placeholderBackgroung">#D1D1D1</color>
+    <color name="white">#ffffff</color>
+    <color name="whiteLight">#4DFFFFFF</color>
+    <color name="black">#000000</color>
+
 </resources>

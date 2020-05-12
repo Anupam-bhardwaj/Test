@@ -1,15 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:weightSum="6"
     tools:context=".StillImage">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+   <ImageView
+       android:id="@+id/captureImage"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:scaleType="fitXY"
+       android:layout_weight="4.5"
+       />
 
-</RelativeLayout>
+   <TextView
+        android:id="@+id/labelText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/captureImage"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:layout_weight="0.5"
+        />
+    <Button
+        android:id="@+id/detect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Detect"
+        android:layout_gravity="center_horizontal"/>
+</LinearLayout>
